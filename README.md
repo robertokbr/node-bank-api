@@ -1,6 +1,6 @@
 <h1 align="center">
 <a href="https://southsystem.files.wordpress.com/2018/09/nodejs.png">
-<img alt=" " src=" " width="350px" />
+<img alt="Node.JS" src="https://southsystem.files.wordpress.com/2018/09/nodejs.png" width="300px" />
 </a>
 </h1>
 
@@ -10,7 +10,7 @@ Bank Transactions
 
 <p align="center">Application to store incoming and outgoing financial transactions, which should allow the registration and listing of these transactions.</p>
 
-### 🕹  HOW TO USE
+###  🕹  HOW TO USE
 
 - Install yarn and run the cmd
 
@@ -42,7 +42,7 @@ transactions: [
   balance: { income: 6000, outcome: 5200, total: 800 },
 ```
 
-Within balance, income is the sum of all values of transactions with `**type**` income. The outcome is the sum of all transaction values with **`type`** outcome, and the total is the **`income - outcome`** value.
+Within balance, income is the sum of all values of transactions with `type` income. The outcome is the sum of all transaction values with **`type`** outcome, and the total is the **`income - outcome`** value.
 
 ### **API ESPECIFICATIONS**
 
