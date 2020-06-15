@@ -15,18 +15,23 @@ Bank Transactions
 - Install yarn and run the cmd
 
 ```
-$ git clone //URL
-$ cd //repoName
+$ git clone https://github.com/robertokbr/BankTransactions.git
+$ cd BankTransactions
 $ yarn
+$ yarn dev:server
 
 ```
 
 ##  FEATURES
 
-- The route receives `**title**`, **`value`** and **`type`** within the body of the request, **`type`** is the type of the transaction, `**income**` for incoming (deposits) and `**outcome**` for outgoing (withdrawn). When registering a new transaction, it is stored inside an object with the following format
+- The route receives **`title`** , **`value`** and **`type`** within the body of the request, **`type`** is the type of the transaction, **`income`** for incoming (deposits) and `**outcome**` for outgoing (withdrawn). When registering a new transaction, it is stored inside an object with the following format
 
 ```jsx
-{ "id": "uuid", "title": "Salário", "value": 3000, "type": "income"
+{ 
+"id": "uuid", 
+"title": "Salário", 
+"value": 3000, 
+"type": "income"
 }
 ```
 
@@ -34,12 +39,24 @@ $ yarn
 
 ```jsx
 transactions: [
-    { id: 'uuid', title: 'Salário', value: 4000, type: 'income' },
-    { id: 'uuid', title: 'Freela', value: 2000, type: 'income' },
-    { id: 'uuid', title: 'Pagamento da fatura', value: 4000, type: 'outcome' },
-    { id: 'uuid', title: 'Cadeira Gamer', value: 1200, type: 'outcome' },
+    {
+    id: 'uuid', title: 'Salário', value: 4000, type: 'income' 
+    },
+    { 
+    id: 'uuid', title: 'Freela', value: 2000, type: 'income' 
+    },
+    { 
+    id: 'uuid', title: 'Pagamento da fatura', value: 4000, type: 'outcome' 
+    },
+    { 
+    id: 'uuid', title: 'Cadeira Gamer', value: 1200, type: 'outcome' 
+    },
   ],
-  balance: { income: 6000, outcome: 5200, total: 800 },
+  balance: { 
+  income: 6000, 
+  outcome: 5200, 
+  total: 800 
+  },
 ```
 
 Within balance, income is the sum of all values of transactions with `type` income. The outcome is the sum of all transaction values with **`type`** outcome, and the total is the **`income - outcome`** value.
