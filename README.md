@@ -10,7 +10,7 @@ Bank Transactions
 
 <p align="center">Application to store incoming and outgoing financial transactions, which should allow the registration and listing of these transactions.</p>
 
-## 🕹 HOW TO USE 
+##  HOW TO USE 
 
 - Install yarn and run the cmd
 
@@ -21,7 +21,7 @@ $ yarn
 
 ```
 
-## 🏗 FEATURES
+##  FEATURES
 
 - The route receives `**title**`, **`value`** and **`type`** within the body of the request, **`type`** is the type of the transaction, `**income**` for incoming (deposits) and `**outcome**` for outgoing (withdrawn). When registering a new transaction, it is stored inside an object with the following format
 
